@@ -10,7 +10,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-//@Table(name = "Customers")
 public class SaleRows implements Serializable{
 
 	/**

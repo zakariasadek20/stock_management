@@ -14,7 +14,6 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-//@Table(name = "CustomerOders")
 public class MvtStk implements Serializable {
 
 	public static final int ENTREE = 1;
