@@ -39,7 +39,7 @@ public class Product implements Serializable {
 	private String picture;
 
 	@ManyToOne
-	@JoinColumn(name = "categoryId")
+	@JoinColumn(name = "categoryId",nullable = true)
 	private Category category;
 
 	
@@ -59,6 +59,21 @@ public class Product implements Serializable {
 		
 	}
 	
+	
+	
+	public Product(String productCode, String productDesignation, BigDecimal unitPriceHT, BigDecimal productTaxValue,
+			BigDecimal unitPriceTTC, String picture) {
+		super();
+		this.productCode = productCode;
+		this.productDesignation = productDesignation;
+		this.unitPriceHT = unitPriceHT;
+		this.productTaxValue = productTaxValue;
+		this.unitPriceTTC = unitPriceTTC;
+		this.picture = picture;
+	}
+
+
+
 	public long getProductId() {
 		return productId;
 	}
